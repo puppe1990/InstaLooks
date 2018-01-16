@@ -1,0 +1,250 @@
+.enviando{
+    display: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    color: #fff;
+}
+
+.pedidos-layer{
+    display: none;
+	z-index: 10;
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(53, 53, 53, 0.7);
+    overflow: auto
+}
+
+.pedidos-frame{
+    position: absolute;
+    width: 310px;
+    left: 50%;
+    top: -635px;
+    padding: 10px;
+    margin: 0 0 30px -155px;
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+	transition: all .35s ease-in-out;
+}
+
+.pedidos-frame-retorno {
+    display: none;
+    position: absolute;
+    width: 310px;
+    left: 50%;
+    top: 50%;
+    padding: 10px;
+    margin: -140px 0 30px -155px;
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+	transition: all .35s ease-in-out;
+}
+
+.pedidos-frame a{
+    color: #d2d2d2;
+	text-decoration: none;
+}
+
+.pedidos-frame input{
+	background: transparent;
+    border: 0;
+    border-bottom: 1px solid #333;
+	margin: 0 0 7px 4px;
+	color: #fff;
+	padding-top: 5px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+    font-size: 14px;
+}
+
+.pedidos-frame textarea{
+	background: transparent;
+    border: 0;
+    border-bottom: 1px solid #333;
+    width: 233px;
+    height: 42px;
+    color: #fff;
+    margin-top: 8px;
+    line-height: 19px;
+}
+
+.pedidos-fechar{
+    position: absolute;
+    z-index: 2;
+    width: 31px;
+    right: 0px;
+    top: 0px;
+    height: 31px;
+    padding: 0px;
+    background-color: #252525;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 21px;
+    text-align: center;
+}
+
+.pedidos-infos{
+	width: 100%;
+    margin-top: 10px;
+}
+
+.pedidos-img{
+    float: left;
+}
+
+.pedidos-img img{
+    width: 100%;
+    height: auto;
+}
+
+.pedidos-img-retorno img{
+    width: 70px;
+    height: 70px;
+}
+
+.pedidos-det{
+    float: left;
+    width: 100%;
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+.pedidos-det-retorno{
+    width: 212px;
+    margin-left: 6px;
+}
+
+.pedidos-text{
+	clear: both;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 13px;
+    color: #b7b7b7;
+}
+
+.pedidos-frame button{
+	background: #91d0c4;
+    border: 0;
+    position: relative;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 6px;
+    margin: 0 0 5px 50px;
+}
+
+.precos-pedidos {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.preco2 {
+    font-size: 20px;
+}
+
+.preco-taja2 {
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.preco-promo2 {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.pedido-enviado {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+    border-bottom-style: dashed;
+}
+
+.pedido-obrigado {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #b7b7b7;
+    margin: 10px 0;
+}
+
+
+
+
+::-webkit-input-placeholder {
+	color: #666;
+	font-family: 'Open Sans', sans-serif;
+}
+
+:-moz-placeholder {
+   color: #666;
+	font-family: 'Open Sans', sans-serif;
+}
+
+::-moz-placeholder {
+   color: #666;
+	font-family: 'Open Sans', sans-serif;
+}
+
+:-ms-input-placeholder {  
+   color: #666;
+	font-family: 'Open Sans', sans-serif;
+}
+/* -----------------------------------480------------------------------*/
+
+@media screen and (max-width: 480px) {
+    
+   
+
+    
+}
+
+/* -----------------------------------481-767---------------------------*/
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    
+  
+
+    
+}
+
+/* --------------------------------768-1023------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+
+}
+
+/* --------------------------------1024-1279------------------------------*/
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+
+
+
+    
+}
+
+/* ------------------------------------1280-------------------------------*/
+
+@media screen and (min-width: 1280px){
+
+
+    
+}
+

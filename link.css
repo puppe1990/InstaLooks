@@ -1,0 +1,13 @@
+@CHARSET "ISO-8859-1";
+
+.link-position{
+	text-decoration: none;
+	background: #ee6e73;
+	border-radius: 25px;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	vertical-align: text-top;
+	font-family: "";
+	font-color: black!important;
+}

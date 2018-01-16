@@ -1,0 +1,101 @@
+
+
+    <div class="card horizontal">
+      <div class="card-image">
+        <span class="card-title">Card Title</span>
+		<div class="imageDiv">
+			<img class="image ma-terialboxed" id="myImgId" alt="" src="imagens/teste-moca.jpg" alt=""/>
+		</div>
+      </div>
+      <div class="card-stacked">
+	      <div class="card-content">
+	        <p>I am a very simple card. I am good at containing small bits of information.
+	        I am convenient because I require little markup to use effectively.</p>
+	      </div>
+	      <div class="card-action">
+	        <a href="#">This is a link</a>
+	      </div>
+      </div>
+    </div>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	var count = 1;
+	
+	//$('body').css('position','relative');
+	
+	$('.image').css('z-index', 1);
+	//$('.image').css('display', 'inline-block');
+	$('.image').css('position', 'relative!important');
+	
+	divResizing();
+
+
+	$('.imageDiv').on('contextmenu','.link-position', function (e) {
+		this.remove();
+		count--;
+		console.log('removeu')
+     	e.stopPropagation();
+     	e.preventDefault();
+	});
+	
+	$('.imageDiv').on('click','.link-position', function (e) {
+		console.log('teste')
+     	e.stopPropagation();
+     	e.preventDefault();
+	});
+	
+	$(".imageDiv").on('click',function(e){
+		var x = 0;
+	    var y = 0;
+	    
+	    console.log($(this).offset().left);
+		console.log($(this).offset().top);
+	    
+	    x = e.pageX - $(this).offset().left-10;
+	    y = e.pageY - $(this).offset().top-10;
+	    
+		$(this).append('<a class="link-position link-'+count+'" href="#">'+count+'</a>')
+		
+		linkStyling(count, x, y);
+		
+		count ++;
+	}); 	
+
+	
+	function divResizing(){
+		$('.imageDiv').find('.image').each(function(){
+			var image = $(this);
+			divStyling(image);
+		});
+	}
+	
+	function divStyling(image){
+			
+			var width = image.width();
+			var height = image.height();
+			///image.parent().css('float', 'left')
+			image.parent().css('position', 'relative')
+			image.parent().css('width', width)
+			image.parent().css('height', height)
+			image.parent().css('z-index', 2);
+		
+	}
+	
+	function linkStyling(link, x, y){
+		//x = x-x*(50/100);
+		//y = y-y*(50/100);
+		
+		$('.link-'+link).css('position', 'absolute');
+		$('.link-'+link).css('top', y); 
+		$('.link-'+link).css('left', x);
+		$('.link-'+link).css('z-index', 3);
+		return;
+	}
+	
+
+});
+</script>
